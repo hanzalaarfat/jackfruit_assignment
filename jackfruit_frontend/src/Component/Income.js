@@ -16,7 +16,7 @@ function Income() {
     e.preventDefault();
 
     try {
-      await Axios.post("http://localhost:4000/api/income", {
+      await Axios.post("http://localhost:4000/api/addincome", {
         basic,
         lta,
         hra,
@@ -47,39 +47,34 @@ function Income() {
 
           <div className="form-floating mb-3">
             <input
-              type="text"
+              type="number"
               onChange={(e) => setBasic(e.target.value)}
               value={basic}
               name="basic"
               className="form-control"
               id="floatingPassword"
-              placeholder="Password"
             />
             <label for="floatingPassword"> Enter Basic Salary</label>
           </div>
 
           <div className="form-floating mb-3">
             <input
-              type="password"
+              type="number"
               onChange={(e) => setLta(e.target.value)}
               value={lta}
               name="lta"
               className="form-control"
-              id="floatingPassword"
-              placeholder="Password"
             />
             <label for="floatingPassword"> Enter LTA</label>
           </div>
 
           <div className="form-floating mb-3">
             <input
-              type="password"
+              type="number"
               className="form-control"
               onChange={(e) => setHra(e.target.value)}
               value={hra}
               name="hra"
-              id="floatingPassword"
-              placeholder="Password"
             />
             <label for="floatingPassword">Enter HRA</label>
           </div>
@@ -91,8 +86,6 @@ function Income() {
               value={fa}
               name="fa"
               className="form-control"
-              id="floatingPassword"
-              placeholder="Password"
             />
             <label for="floatingPassword">Enter FA</label>
           </div>

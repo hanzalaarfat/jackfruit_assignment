@@ -6,7 +6,7 @@ function Header() {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light ">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               Jack Furite
             </a>
             <button
@@ -34,8 +34,8 @@ function Header() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Pricing
+                  <a className="nav-link" href="/invest">
+                    Add Invest
                   </a>
                 </li>
               </ul>

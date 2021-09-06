@@ -7,6 +7,7 @@ import Signup from "./Component/Signup";
 import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import Income from "./Component/Income";
+import Invest from "./Component/Invest";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/income" exact component={Income} />
+          <Route path="/invest" exact component={Invest} />
           {/* <PrivateRoute path="/home" component={Home} /> */}
 
           {/* <PrivateRoute path="/profile" component={Profile} /> */}
