@@ -6,5 +6,6 @@ const userAutcontroller = require("../controller/userController");
 
 router.post("/signup", userAutcontroller.signup);
 router.post("/login", userAutcontroller.login);
+router.patch("/editincome", userAutcontroller.updateProfile);
 
 module.exports = router;

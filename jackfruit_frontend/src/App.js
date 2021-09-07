@@ -3,22 +3,25 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./Component/Login";
 import Signup from "./Component/Signup";
-
+import PrivateRoute from "./Component/PrivateRoute";
+import Taxincom from "./Component/Taxincome";
 import bootstrap from "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-import Income from "./Component/Income";
 import Invest from "./Component/Invest";
+import Header from "./Component/Header";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/login" exact component={Login} />
           <Route path="/" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
-          <Route path="/income" exact component={Income} />
-          <Route path="/invest" exact component={Invest} />
-          {/* <PrivateRoute path="/home" component={Home} /> */}
+          {/* <Route path="/income" exact component={Income} /> */}
+
+          <PrivateRoute path="/home" component={Invest} />
+          <PrivateRoute path="/taxincome" component={Taxincom} />
 
           {/* <PrivateRoute path="/profile" component={Profile} /> */}
 

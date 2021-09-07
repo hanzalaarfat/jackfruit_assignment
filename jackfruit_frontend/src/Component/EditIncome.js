@@ -2,25 +2,27 @@ import React from "react";
 import Axios from "axios";
 import { Redirect, useHistory } from "react-router-dom";
 
-import Header from "../Component/Header";
+import HeaderHome from "./HeaderHome";
 
-function Income() {
+function EditIncome() {
   const history = useHistory();
 
   const [basic, setBasic] = React.useState("");
   const [lta, setLta] = React.useState("");
   const [hra, setHra] = React.useState("");
   const [fa, setFa] = React.useState("");
+  const userId = localStorage.getItem("userId");
 
   const PostData = async (e) => {
     e.preventDefault();
 
     try {
-      await Axios.post("http://localhost:4000/api/addincome", {
+      await Axios.patch("http://localhost:4000/api/editincome", {
         basic,
         lta,
         hra,
         fa,
+        userId,
       })
         .then((res) => {
           console.log(res);
@@ -40,10 +42,10 @@ function Income() {
 
   return (
     <div>
-      <Header />
+      <HeaderHome />
       <form>
         <div className="form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
-          <label className="form-label mt-4">Add income</label>
+          <label className="form-label mt-4">Edit income</label>
 
           <div className="form-floating mb-3">
             <input
@@ -81,7 +83,7 @@ function Income() {
 
           <div className="form-floating mb-3">
             <input
-              type="password"
+              type="Number"
               onChange={(e) => setFa(e.target.value)}
               value={fa}
               name="fa"
@@ -89,8 +91,9 @@ function Income() {
             />
             <label for="floatingPassword">Enter FA</label>
           </div>
+
           <button type="submit" class="btn btn-primary" onClick={PostData}>
-            Add Income
+            Submit
           </button>
         </div>
       </form>
@@ -98,4 +101,4 @@ function Income() {
   );
 }
 
-export default Income;
+export default EditIncome;

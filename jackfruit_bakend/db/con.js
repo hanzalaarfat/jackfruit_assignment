@@ -13,6 +13,10 @@ mongoose
     // useUnifiedTopology: true,
     // useCreateIndex: true,
     // useFindAndModify: false,
+    // useFindAndModify: true,
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    // useCreateIndex: true,
   })
   .then(() => {
     console.log("connectin suceesfull");

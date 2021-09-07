@@ -7,7 +7,7 @@ var cors = require("cors");
 
 const userRoutes = require("./router/userRouter");
 const investRoutes = require("./router/investRouter");
-const incomeRoutes = require("./router/incomeRouter");
+// const incomeRoutes = require("./router/incomeRouter");
 
 dotenv.config();
 require("./db/con");
@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", userRoutes);
-app.use("/api", incomeRoutes);
+// app.use("/api", incomeRoutes);
 app.use("/api", investRoutes);
 
 app.use(function (req, res, next) {

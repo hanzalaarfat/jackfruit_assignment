@@ -17,6 +17,29 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    basic: {
+      type: Number,
+      required: true,
+    },
+    lta: {
+      type: Number,
+      required: true,
+    },
+
+    hra: {
+      type: Number,
+      required: true,
+    },
+    fa: {
+      type: Number,
+      required: true,
+    },
+    apphra: {
+      type: Number,
+    },
+    Taxable_Income: {
+      type: Number,
+    },
   },
   { timestamps: true }
 );
