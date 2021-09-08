@@ -15,24 +15,49 @@ function Header({ history }) {
   return (
     <div>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-info">
+        <nav className="navbar navbar-inverse">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <a className="navbar-brand" href="#">
+                WebSiteName
+              </a>
+            </div>
+            <ul className="nav navbar-nav">
+              <li Name="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        {/* <nav className="navbar navbar-expand-lg navbar-light bg-info">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               Jack Fruit
             </a>
+
             <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
               aria-controls="navbarNav"
-              aria-expanded="false"
+              // aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav navbar-right">
                 <li className="nav-item">
                   <a className="nav-link" href="/login">
                     Login
@@ -46,7 +71,7 @@ function Header({ history }) {
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> */}
       </div>
     </div>
   );
