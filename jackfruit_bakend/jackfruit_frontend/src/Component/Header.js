@@ -15,9 +15,9 @@ function Header({ history }) {
   return (
     <div>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav className="navbar navbar-expand-lg navbar-light bg-info">
           <div className="container-fluid">
-            <a className="navbar-brand header_buttoin " href="/">
+            <a className="navbar-brand" href="/">
               Jack Fruit
             </a>
             <button
@@ -31,23 +31,16 @@ function Header({ history }) {
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="/home">
-                    Add Invest
+                  <a className="nav-link" href="/login">
+                    Login
                   </a>
                 </li>
-
                 <li className="nav-item">
-                  <a className="nav-link" href="/taxincome">
-                    Taxable Income
-                  </a>
-                </li>
-                <li className="nav-item d-flex">
-                  <a className="nav-link" onClick={logout} href="/">
-                    logout
+                  <a className="nav-link" href="/signup">
+                    Sign Up
                   </a>
                 </li>
               </ul>
