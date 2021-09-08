@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/userAuth.model");
+const dotenv = require("dotenv");
+dotenv.config();
 
 exports.requireSignin = (req, res, next) => {
   if (req.headers.authorization) {

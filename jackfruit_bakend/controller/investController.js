@@ -1,4 +1,6 @@
 const express = require("express");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const Invest = require("../model/investModel");
 const User = require("../model/userModel");
