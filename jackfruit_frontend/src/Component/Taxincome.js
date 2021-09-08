@@ -50,11 +50,11 @@ function Taxincome() {
       {userdata ? (
         <div>
           <Card
-            className="col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5"
+            className=" tax_card taxible col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5"
             style={{ width: "40rem" }}
           >
             <Card.Body>
-              <Card.Title>
+              <Card.Title className="tax_card_title">
                 Name : {userdata.name ? userdata.name : ""}
               </Card.Title>
               <Card.Text>
@@ -65,23 +65,23 @@ function Taxincome() {
               </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-              <ListGroupItem>
+              <ListGroupItem className="tax_card_list">
                 Taxable_Income :
                 {userdata.Taxable_Income ? userdata.Taxable_Income : ""}
               </ListGroupItem>
 
-              <ListGroupItem>
+              <ListGroupItem className="tax_card_list2">
                 Applicable HRA :{userdata.apphra ? userdata.apphra : ""}
               </ListGroupItem>
-              <ListGroupItem>
+              <ListGroupItem className="tax_card_list">
                 {" "}
                 Basic :{userdata.basic ? userdata.basic : ""}
               </ListGroupItem>
-              <ListGroupItem>
+              <ListGroupItem className="tax_card_list2">
                 {" "}
                 Food :{userdata.fa ? userdata.fa : ""}
               </ListGroupItem>
-              <ListGroupItem>
+              <ListGroupItem className="tax_card_list">
                 {" "}
                 LTA :{userdata.lta ? userdata.lta : ""}
               </ListGroupItem>

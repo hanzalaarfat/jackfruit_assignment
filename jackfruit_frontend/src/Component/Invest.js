@@ -53,7 +53,7 @@ function Invest() {
     <div className="login">
       <HeaderHome />
       <form>
-        <div className="form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
+        <div className=" invest form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
           <label className="form-label mt-4">Add invest</label>
 
           <div className="form-floating mb-3">
@@ -113,7 +113,7 @@ function Invest() {
             Add Income
           </button> */}
 
-          <Button variant="primary" onClick={handleShow}>
+          <Button className="mb-3" variant="primary" onClick={handleShow}>
             Add Invest
           </Button>
 

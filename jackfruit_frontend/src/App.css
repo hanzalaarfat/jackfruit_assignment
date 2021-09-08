@@ -9,11 +9,32 @@
   margin: auto 0px;
   width: auto;
   height: 1000px;
+}
 
-  /* background-size: cover;
-  min-height: 100%;
-  background-image: url("/login.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; */
+.tax_card_title {
+  color: rgb(28, 77, 27);
+}
+.tax_card_list:hover {
+  box-shadow: 6px 6px 8px rgb(177, 219, 247);
+  transform: scale(1.02);
+  background-color: rgb(40, 98, 156);
+  color: rgb(247, 247, 57);
+}
+
+.tax_card_list2:hover {
+  box-shadow: 6px 6px 8px rgb(177, 219, 247);
+  transform: scale(1.02);
+  background-color: rgb(12, 88, 78);
+  color: rgb(247, 247, 57);
+}
+
+.invest:hover {
+  box-shadow: 8px 8px 8px rgb(43, 134, 150);
+  transform: scale(1.03);
+}
+
+.taxible:hover {
+  box-shadow: 6px 6px 8px rgb(177, 219, 247);
+  transform: scale(1.07);
+  background-color: rgb(245, 246, 247);
 }

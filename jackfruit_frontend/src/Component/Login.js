@@ -40,7 +40,7 @@ function Login() {
       <Header />
       <div>
         <form>
-          <div className=" form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
+          <div className=" invest form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
             <label className="form-label mt-4">Login</label>
 
             <div className="form-floating mb-3">
@@ -69,7 +69,11 @@ function Login() {
               <label for="floatingPassword">Password</label>
             </div>
 
-            <button type="submit" class="btn btn-primary" onClick={PostData}>
+            <button
+              type="submit"
+              class=" mb-3 btn btn-primary"
+              onClick={PostData}
+            >
               Sign in
             </button>
           </div>
