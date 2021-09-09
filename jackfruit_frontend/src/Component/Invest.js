@@ -56,7 +56,7 @@ function Invest() {
         <div className=" invest form-group col-sm-6 mw-80 col-md-4 col-lg-4  mx-auto mt-5 ">
           <label className="form-label mt-4">Add invest</label>
 
-          <div className="form-floating mb-3">
+          <div className="form-floating mb-3 invest_card_list">
             <input
               type="number"
               onChange={(e) => setInvest(e.target.value)}
@@ -71,7 +71,7 @@ function Invest() {
             </label>
           </div>
 
-          <div className="form-floating mb-3">
+          <div className="form-floating mb-3 invest_card_list2">
             <input
               type="number"
               onChange={(e) => setRent(e.target.value)}
@@ -84,7 +84,7 @@ function Invest() {
             <label for="floatingPassword"> Enter Actual Rent</label>
           </div>
 
-          <div className="form-floating mb-3">
+          <div className="form-floating mb-3 invest_card_list">
             <input
               type="number"
               onChange={(e) => setMed(e.target.value)}
@@ -97,7 +97,7 @@ function Invest() {
             <label for="floatingPassword">Enter FA</label>
           </div>
 
-          <div className="form-floating mb-3">
+          <div className="form-floating mb-3 invest_card_list2">
             <select
               className="form-select"
               onChange={(e) => setCitytype(e.target.value)}

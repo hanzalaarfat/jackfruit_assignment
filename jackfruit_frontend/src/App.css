@@ -19,6 +19,18 @@
   box-shadow: 6px 6px 8px rgb(177, 219, 247);
   transform: scale(1.5);
 }
+.invest_card_list:hover {
+  box-shadow: 6px 6px 8px rgb(95, 165, 211);
+  transform: scale(1.04);
+  background-color: rgb(40, 98, 156);
+  color: rgb(33, 21, 202);
+}
+.invest_card_list2:hover {
+  box-shadow: 6px 6px 8px rgb(177, 219, 247);
+  transform: scale(1.02);
+  background-color: rgb(40, 98, 156);
+  color: rgb(63, 11, 70);
+}
 .tax_card_list:hover {
   box-shadow: 6px 6px 8px rgb(177, 219, 247);
   transform: scale(1.02);
