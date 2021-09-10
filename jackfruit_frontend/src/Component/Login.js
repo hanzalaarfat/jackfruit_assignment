@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Axios from "axios";
 import Header from "./Header";
 
@@ -12,12 +12,12 @@ function Login() {
     e.preventDefault();
 
     try {
-      await Axios.post("/api/login", {
+      await Axios.post("https://jack-fruit.herokuapp.com/api/login", {
         email,
         password,
       })
         .then((res) => {
-          //console.log(res);
+          console.log(res.status);
           localStorage.setItem("userId", res.data._id);
           localStorage.setItem("token", res.data.token);
 
@@ -27,8 +27,14 @@ function Login() {
           // <Redirect to="/login" />;
         })
         .catch((err) => {
-          window.alert("incorect password or email");
-          history.push("/");
+          if (!email || !password) {
+            window.alert("Input filds are not empaty");
+          } else {
+            window.alert("incorect password or email");
+            setEmail("");
+            setPassword("");
+            history.push("/");
+          }
         });
     } catch (err) {
       window.alert(err);

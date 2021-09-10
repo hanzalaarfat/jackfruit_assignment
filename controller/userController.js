@@ -8,9 +8,9 @@ dotenv.config();
 
 exports.signup = async (req, res) => {
   const { name, email, password, basic, lta, fa, hra } = req.body;
-  if ((!name || !email, !password, !basic || !lta, !fa, !hra)) {
-    return res.status(422).json({ err: "plz filled properly" });
-  }
+  // if (!name || !email || !password || !basic || !lta || !fa || !hra) {
+  //   return res.status(422).json({ err: "plz filled properly" });
+  // }
 
   ///////////////////////////////// async await or  /////////
   try {
@@ -60,12 +60,12 @@ exports.login = async (req, res) => {
         const { _id, email, name } = user;
         res.status(200).json({ token, _id, email, name });
       } else {
-        return res.status.json({
+        return res.status(400).json({
           message: "incoreet usr or email",
         });
       }
     } else {
-      return res.status(400).send({ message: "email or password wrong" });
+      return res.status(400).json({ message: "email or password wrong" });
     }
   });
 };

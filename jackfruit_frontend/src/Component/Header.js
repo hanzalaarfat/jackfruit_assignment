@@ -1,17 +1,11 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 function Header({ history }) {
-  const [token, setToken] = useState("");
-  const tok = localStorage.getItem("token");
-  useEffect(() => {}, setToken[tok]);
-  // setToken(tok);
+  // const [token, setToken] = useState("");
 
-  const logout = async (e) => {
-    localStorage.removeItem("token");
-    setToken(null);
-  };
+  // const tok = localStorage.getItem("token");
+  // useEffect(() => {}, setToken[tok]);
 
   return (
     <>

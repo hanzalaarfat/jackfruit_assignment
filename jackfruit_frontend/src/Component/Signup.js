@@ -43,7 +43,12 @@ function Signup() {
           // <Redirect to="/login" />;
         })
         .catch((err) => {
-          window.alert("Email id is already Exist");
+          if (!name || !email || !password || !basic || !lta || !fa || !hra) {
+            window.alert("Filds Are not Empaty");
+          } else {
+            console.log(err);
+            window.alert("Email id is already Exist");
+          }
         });
     } catch (err) {
       window.alert(err);

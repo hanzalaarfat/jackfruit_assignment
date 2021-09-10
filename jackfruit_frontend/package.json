@@ -1,6 +1,5 @@
 {
   "name": "jackfruit_frontend",
-  "proxy": "https://jack-fruit.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,3 +42,4 @@
     ]
   }
 }
+
